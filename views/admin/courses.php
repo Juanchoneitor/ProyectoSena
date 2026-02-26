@@ -59,7 +59,7 @@ $courses = $pdo->query("SELECT c.*, u.username as teacher_name, cat.name as cate
                         <?php } ?>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary">Crear Curso</button>
+                <button type="submit" class="btn btn-primary"action="create">Crear Curso</button>
             </form>
         </div>
     </div>
