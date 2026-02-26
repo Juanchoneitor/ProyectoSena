@@ -117,13 +117,13 @@ ob_end_flush();
                                                     data-content-url="<?php echo htmlspecialchars($material['content_url'] ?? ''); ?>">
                                                     Editar
                                                 </button>
-                                                <a href="/cursos_app/controllers/materialController.php?action=delete&id=<?php echo $material['id']; ?>" 
+                                                <a href="/controllers/materialController.php?action=delete&id=<?php echo $material['id']; ?>" 
                                                    class="btn btn-danger btn-sm" 
                                                    onclick="return confirm('¿Estás seguro de eliminar este material?');">
                                                     Eliminar
                                                 </a>
                                                 <?php if ($material['file_path']): ?>
-                                                    <a href="<?php echo '/cursos_app/' . htmlspecialchars($material['file_path']); ?>" 
+                                                    <a href="<?php echo '/' . htmlspecialchars($material['file_path']); ?>" 
                                                        target="_blank" 
                                                        class="btn btn-info btn-sm">
                                                         Ver
@@ -147,7 +147,7 @@ ob_end_flush();
                     <h4>Subir Nuevo Material</h4>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="/cursos_app/controllers/materialController.php?action=create" enctype="multipart/form-data" id="uploadForm">
+                    <form method="POST" action="/controllers/materialController.php?action=create" enctype="multipart/form-data" id="uploadForm">
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                         
                         <div class="mb-3">
@@ -220,7 +220,7 @@ ob_end_flush();
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="/cursos_app/controllers/materialController.php?action=update" enctype="multipart/form-data">
+                    <form method="POST" action="/controllers/materialController.php?action=update" enctype="multipart/form-data">
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                         <input type="hidden" name="id" id="edit_material_id">
                         

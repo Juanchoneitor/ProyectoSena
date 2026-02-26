@@ -162,7 +162,7 @@ function getYouTubeID($url) {
                                     </button>
                                 
                                 <?php else: // file ?>
-                                    <a href="<?php echo '/cursos_app/' . htmlspecialchars($material['file_path']); ?>" 
+                                    <a href="<?php echo '/' . htmlspecialchars($material['file_path']); ?>" 
                          
                                        class="btn btn-primary btn-sm w-100">
                                         <i class="bi bi-download"></i> Descargar / Ver
@@ -231,7 +231,7 @@ function getYouTubeID($url) {
                                 </div>
                                 <div class="modal-body p-0">
                                     <video controls class="w-100" style="max-height: 70vh;">
-                                        <source src="<?php echo '/cursos_app/' . htmlspecialchars($material['file_path']); ?>" type="video/mp4">
+                                        <source src="<?php echo '/' . htmlspecialchars($material['file_path']); ?>" type="video/mp4">
                                         Tu navegador no soporta el tag de video.
                                     </video>
                                 </div>

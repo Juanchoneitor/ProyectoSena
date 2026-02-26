@@ -1,17 +1,16 @@
 <?php
-$host = 'localhost';
-$db_name = 'cursos_app';
-$username = 'root';
-$password = '1234';
+$host     = getenv('DB_HOST')     ?: 'localhost';
+$db_name  = getenv('DB_NAME')     ?: 'cursos_app';
+$username = getenv('DB_USER')     ?: 'root';
+$password = getenv('DB_PASSWORD') ?: '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db_name;charset=utf8", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    echo "<!-- Conexión a DB exitosa para $db_name -->";
 } catch (PDOException $e) {
     $error_msg = "Error de conexión a la base de datos: " . $e->getMessage();
-    file_put_contents('debug.log', $error_msg . ", Time: " . date('Y-m-d H:i:s') . "\n", FILE_APPEND);
-    die("<div style='color:red;'>$error_msg</div>");
+    error_log($error_msg);
+    die("<div style='color:red;'>Error de conexión. Revisa la configuración de la base de datos.</div>");
 }
 ?>

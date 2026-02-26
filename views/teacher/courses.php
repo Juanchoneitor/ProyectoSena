@@ -74,12 +74,12 @@ try {
                                         <td><?= htmlspecialchars($course['title']) ?></td>
                                         <td><?= htmlspecialchars($course['description']) ?></td>
                                         <td>
-                                            <a href="/cursos_app/views/teacher/tasks.php?course_id=<?= $course['id'] ?>" 
+                                            <a href="/views/teacher/tasks.php?course_id=<?= $course['id'] ?>" 
                                                class="btn btn-sm btn-info">
                                                 Ver Tareas
                                             </a>
 
-                                            <a href="/cursos_app/views/teacher/edit_course.php?course_id=<?= $course['id'] ?>" 
+                                            <a href="/views/teacher/edit_course.php?course_id=<?= $course['id'] ?>" 
                                                class="btn btn-sm btn-warning ms-2">
                                                 Editar
                                             </a>
@@ -110,7 +110,7 @@ try {
             <div class="card mb-4">
                 <div class="card-header bg-success text-white">Crear Nuevo Curso</div>
                 <div class="card-body">
-                    <form method="POST" action="/cursos_app/controllers/courseController.php?action=create">
+                    <form method="POST" action="/controllers/courseController.php?action=create">
                         <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token']) ?>">
                         <input type="hidden" name="teacher_id" value="<?= htmlspecialchars($_SESSION['user_id']) ?>">
 
@@ -167,7 +167,7 @@ try {
             <div class="modal-footer">
                 <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
 
-                <form method="POST" action="/cursos_app/controllers/courseController.php?action=delete">
+                <form method="POST" action="/controllers/courseController.php?action=delete">
                     <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token']) ?>">
                     <input type="hidden" name="id" id="delete_course_id">
                     <button type="submit" class="btn btn-danger">Eliminar Curso</button>

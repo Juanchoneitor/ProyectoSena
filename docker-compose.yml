@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      DB_HOST: db
+      DB_NAME: cursos_app
+      DB_USER: cursos_user
+      DB_PASSWORD: cursos_password
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - uploads_data:/var/www/html/uploads
+      - uploads_views:/var/www/html/views/uploads
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: cursos_app
+      MYSQL_USER: cursos_user
+      MYSQL_PASSWORD: cursos_password
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+volumes:
+  mysql_data:
+  uploads_data:
+  uploads_views:

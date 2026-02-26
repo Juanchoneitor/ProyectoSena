@@ -28,9 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             // Definir redirects
             $redirects = [
-                'admin' => '/cursos_app/views/admin/dashboard.php',
-                'teacher' => '/cursos_app/views/teacher/dashboard.php',
-                'student' => '/cursos_app/views/student/dashboard.php'
+                'admin' => '/views/admin/dashboard.php',
+                'teacher' => '/views/teacher/dashboard.php',
+                'student' => '/views/student/dashboard.php'
             ];
 
             $role = $user['role'];

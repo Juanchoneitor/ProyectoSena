@@ -15,8 +15,8 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="/cursos_app/views/student/dashboard.php">
-            <img src="/cursos_app/Img/LOGOCURSOS.png" alt="Plataforma de Cursos" class="navbar-logo">
+        <a class="navbar-brand d-flex align-items-center" href="/views/student/dashboard.php">
+            <img src="/Img/LOGOCURSOS.png" alt="Plataforma de Cursos" class="navbar-logo">
             <span class="brand-text ms-2">CursosApp</span>
         </a>
 
@@ -32,9 +32,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                     $role = $_SESSION['role'] ?? 'guest';
                     if ($role === 'student') { ?>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'dashboard.php' ? 'active' : '' ?>" href="/cursos_app/views/student/dashboard.php"><i class="fas fa-tachometer-alt me-1"></i> Dashboard</a></li>
-                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'courses.php' ? 'active' : '' ?>" href="/cursos_app/views/student/courses.php"><i class="fas fa-book me-1"></i> Mis Cursos</a></li>
-                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'tasks.php' ? 'active' : '' ?>" href="/cursos_app/views/student/tasks.php"><i class="fas fa-tasks me-1"></i> Tareas</a></li>
+                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'dashboard.php' ? 'active' : '' ?>" href="/views/student/dashboard.php"><i class="fas fa-tachometer-alt me-1"></i> Dashboard</a></li>
+                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'courses.php' ? 'active' : '' ?>" href="/views/student/courses.php"><i class="fas fa-book me-1"></i> Mis Cursos</a></li>
+                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'tasks.php' ? 'active' : '' ?>" href="/views/student/tasks.php"><i class="fas fa-tasks me-1"></i> Tareas</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link user-dropdown" href="#" id="userDropdownStudent" onclick="toggleDropdown(event, 'dropdownMenuStudent')">
                                     <div class="user-avatar"><i class="fas fa-user"></i></div>
@@ -44,18 +44,18 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                                 <ul class="dropdown-menu dropdown-menu-end" id="dropdownMenuStudent">
                                     <li class="dropdown-header"><i class="fas fa-user-circle me-2"></i><?php echo htmlspecialchars($_SESSION['username'] ?? 'Estudiante'); ?></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="/cursos_app/views/student/profile.php"><i class="fas fa-eye me-2"></i> Ver Perfil</a></li>
+                                    <li><a class="dropdown-item" href="/views/student/profile.php"><i class="fas fa-eye me-2"></i> Ver Perfil</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item text-danger" href="/cursos_app/controllers/logout.php"><i class="fas fa-sign-out-alt me-2"></i> Cerrar Sesión</a></li>
+                                    <li><a class="dropdown-item text-danger" href="/controllers/logout.php"><i class="fas fa-sign-out-alt me-2"></i> Cerrar Sesión</a></li>
                                 </ul>
                             </li>
                         </ul>
                     <?php } elseif ($role === 'teacher') { ?>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'dashboard.php' ? 'active' : '' ?>" href="/cursos_app/views/teacher/dashboard.php"><i class="fas fa-chalkboard-teacher me-1"></i> Dashboard</a></li>
-                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'courses.php' ? 'active' : '' ?>" href="/cursos_app/views/teacher/courses.php"><i class="fas fa-book me-1"></i> Mis Cursos</a></li>
-                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'tasks.php' ? 'active' : '' ?>" href="/cursos_app/views/teacher/tasks.php"><i class="fas fa-tasks me-1"></i> Tareas</a></li>
-                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'materials.php' ? 'active' : '' ?>" href="/cursos_app/views/teacher/materials.php"><i class="fas fa-folder-open me-1"></i>Materiales</a></li>
+                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'dashboard.php' ? 'active' : '' ?>" href="/views/teacher/dashboard.php"><i class="fas fa-chalkboard-teacher me-1"></i> Dashboard</a></li>
+                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'courses.php' ? 'active' : '' ?>" href="/views/teacher/courses.php"><i class="fas fa-book me-1"></i> Mis Cursos</a></li>
+                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'tasks.php' ? 'active' : '' ?>" href="/views/teacher/tasks.php"><i class="fas fa-tasks me-1"></i> Tareas</a></li>
+                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'materials.php' ? 'active' : '' ?>" href="/views/teacher/materials.php"><i class="fas fa-folder-open me-1"></i>Materiales</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link user-dropdown" href="#" id="userDropdownTeacher" onclick="toggleDropdown(event, 'dropdownMenuTeacher')">
                                     <div class="user-avatar"><i class="fas fa-user"></i></div>
@@ -65,16 +65,16 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                                 <ul class="dropdown-menu dropdown-menu-end" id="dropdownMenuTeacher">
                                     <li class="dropdown-header"><i class="fas fa-user-circle me-2"></i><?php echo htmlspecialchars($_SESSION['username'] ?? 'Docente'); ?></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="/cursos_app/views/teacher/profile.php"><i class="fas fa-eye me-2"></i> Ver Perfil</a></li>
+                                    <li><a class="dropdown-item" href="/views/teacher/profile.php"><i class="fas fa-eye me-2"></i> Ver Perfil</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item text-danger" href="/cursos_app/controllers/logout.php"><i class="fas fa-sign-out-alt me-2"></i> Cerrar Sesión</a></li>
+                                    <li><a class="dropdown-item text-danger" href="/controllers/logout.php"><i class="fas fa-sign-out-alt me-2"></i> Cerrar Sesión</a></li>
                                 </ul>
                             </li>
                         </ul>
                     <?php } elseif ($role === 'admin') { ?>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'dashboard.php' ? 'active' : '' ?>" href="/cursos_app/views/admin/dashboard.php"><i class="fas fa-user-shield me-1"></i> Dashboard</a></li>
-                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'users.php' ? 'active' : '' ?>" href="/cursos_app/views/admin/users.php"><i class="fas fa-users me-1"></i> Usuarios</a></li>
+                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'dashboard.php' ? 'active' : '' ?>" href="/views/admin/dashboard.php"><i class="fas fa-user-shield me-1"></i> Dashboard</a></li>
+                            <li class="nav-item"><a class="nav-link <?= $currentPage === 'users.php' ? 'active' : '' ?>" href="/views/admin/users.php"><i class="fas fa-users me-1"></i> Usuarios</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link user-dropdown" href="#" id="userDropdownAdmin" onclick="toggleDropdown(event, 'dropdownMenuAdmin')">
                                     <div class="user-avatar"><i class="fas fa-user"></i></div>
@@ -84,9 +84,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                                 <ul class="dropdown-menu dropdown-menu-end" id="dropdownMenuAdmin">
                                     <li class="dropdown-header"><i class="fas fa-user-circle me-2"></i><?php echo htmlspecialchars($_SESSION['username'] ?? 'Admin'); ?></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="/cursos_app/views/admin/profile.php"><i class="fas fa-eye me-2"></i> Ver Perfil</a></li>
+                                    <li><a class="dropdown-item" href="/views/admin/profile.php"><i class="fas fa-eye me-2"></i> Ver Perfil</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item text-danger" href="/cursos_app/controllers/logout.php"><i class="fas fa-sign-out-alt me-2"></i> Cerrar Sesión</a></li>
+                                    <li><a class="dropdown-item text-danger" href="/controllers/logout.php"><i class="fas fa-sign-out-alt me-2"></i> Cerrar Sesión</a></li>
                                 </ul>
                             </li>
                         </ul>

@@ -56,12 +56,12 @@ if ($courseId) {
         $validCourse = $stmtCheck->fetchColumn();
 
         if (!$validCourse) {
-            header('Location: /cursos_app/views/teacher/courses.php?error=No tienes acceso a ese curso');
+            header('Location: /views/teacher/courses.php?error=No tienes acceso a ese curso');
             ob_end_clean();
             exit;
         }
     } catch (PDOException $e) {
-        header('Location: /cursos_app/views/teacher/courses.php?error=Error validando el curso');
+        header('Location: /views/teacher/courses.php?error=Error validando el curso');
         ob_end_clean();
         exit;
     }
@@ -199,7 +199,7 @@ ob_end_flush(); // Envia el buffer al navegador
                                                                 <?php if (!empty($submission['file_path'])):
                                                                     $fileBasename = basename($submission['file_path']);
                                                                 ?>
-                                                                    <a href="/cursos_app/controllers/download.php?file=<?php echo urlencode($fileBasename); ?>"
+                                                                    <a href="/controllers/download.php?file=<?php echo urlencode($fileBasename); ?>"
                                                                         class="btn btn-sm btn-outline-primary"
                                                                         target="_blank">
                                                                         <i class="bi bi-file-earmark-pdf"></i> Ver archivo
@@ -251,7 +251,7 @@ ob_end_flush(); // Envia el buffer al navegador
                     <h4>Crear Nueva Tarea</h4>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="/cursos_app/controllers/taskController.php?action=create">
+                    <form method="POST" action="/controllers/taskController.php?action=create">
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
 
                         <div class="mb-3">
@@ -297,7 +297,7 @@ ob_end_flush(); // Envia el buffer al navegador
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="/cursos_app/controllers/taskController.php?action=update">
+                    <form method="POST" action="/controllers/taskController.php?action=update">
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                         <input type="hidden" name="id" id="edit_task_id">
 
@@ -352,7 +352,7 @@ ob_end_flush(); // Envia el buffer al navegador
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <form method="POST" action="/cursos_app/controllers/taskController.php?action=delete" style="display: inline;">
+                    <form method="POST" action="/controllers/taskController.php?action=delete" style="display: inline;">
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                         <input type="hidden" name="id" id="delete_task_id">
                         <button type="submit" class="btn btn-danger">Eliminar Tarea</button>
@@ -385,7 +385,7 @@ ob_end_flush(); // Envia el buffer al navegador
 
                     <hr>
 
-                    <form method="POST" action="/cursos_app/controllers/taskController.php?action=grade" id="gradeForm">
+                    <form method="POST" action="/controllers/taskController.php?action=grade" id="gradeForm">
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                         <input type="hidden" name="submission_id" id="review_submission_id">
                         <input type="hidden" name="task_id" id="review_task_id">
@@ -474,7 +474,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     .replace(/^\/+/, '');
 
                 var fileBasename = cleanPath.split('/').pop();
-                var correctPath = '/cursos_app/controllers/download.php?file=' + encodeURIComponent(fileBasename);
+                var correctPath = '/controllers/download.php?file=' + encodeURIComponent(fileBasename);
 
                 fileLink.href = correctPath;
                 fileLink.style.display = 'inline-block';

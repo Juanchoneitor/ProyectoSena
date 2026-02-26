@@ -5,7 +5,7 @@ require_once '../../config/database.php';
 require_once '../../includes/header.php';
 require_once '../../includes/navbar.php';
 
-// Verificar autenticación y redirección antes de salida
+// Verificar autenticaci贸n y redirecci贸n antes de salida
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'teacher') {
     header('Location: ../../views/auth/login.php');
     ob_end_clean();
@@ -25,7 +25,7 @@ $show_ungraded = filter_input(
     ['options' => ['default' => false]]
 );
 
-// Lógica para cargar entregas
+// L贸gica para cargar entregas
 try {
     $query = "
         SELECT 
@@ -53,7 +53,7 @@ try {
         $query .= " AND (s.grade IS NULL OR s.grade = 0)";
     }
 
-    // 👉 AQUÍ ESTABA EL ERROR: la columna correcta es submitted_at, no created_at
+    // 馃憠 AQU脥 ESTABA EL ERROR: la columna correcta es submitted_at, no created_at
     $query .= " ORDER BY s.submitted_at DESC";
 
     $stmt = $pdo->prepare($query);
@@ -100,8 +100,8 @@ try {
                         <th>Curso</th>
                         <th>Tarea</th>
                         <th>Archivo</th>
-                        <th>Fecha envío</th>
-                        <th>Calificación</th>
+                        <th>Fecha env铆o</th>
+                        <th>Calificaci贸n</th>
                         <th>Feedback</th>
                         
                     </tr>
@@ -119,7 +119,7 @@ try {
                                 <td><?php echo htmlspecialchars($submission['task_title'] ?? ''); ?></td>
                                 <td>
                                     <?php if (!empty($submission['file_path'])): ?>
-                                        <a href="/cursos_app/<?php echo htmlspecialchars($submission['file_path']); ?>"
+                                        <a href="/<?php echo htmlspecialchars($submission['file_path']); ?>"
                                            target="_blank"
                                            class="btn btn-sm btn-link"
                                            download>

@@ -14,7 +14,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'teacher') {
 // Obtener datos de la entrega desde la URL o parámetros
 $submission_id = filter_input(INPUT_GET, 'submission_id', FILTER_VALIDATE_INT);
 if (!$submission_id) {
-    header('Location: /cursos_app/views/teacher/submissions.php?course_id=1');
+    header('Location: /views/teacher/submissions.php?course_id=1');
     ob_end_clean();
     exit;
 }
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submission_id'])) {
         try {
             $stmt = $pdo->prepare("UPDATE submissions SET grade = ?, feedback = ? WHERE id = ?");
             $stmt->execute([$grade, $feedback, $submission_id]);
-            header('Location: /cursos_app/views/teacher/submissions.php?course_id=' . ($submission['course_id'] ?? 1) . '&success=Calificación guardada');
+            header('Location: /views/teacher/submissions.php?course_id=' . ($submission['course_id'] ?? 1) . '&success=Calificación guardada');
             ob_end_clean();
             exit;
         } catch (PDOException $e) {
@@ -69,7 +69,7 @@ ob_end_flush();
                 <h4 class="text-success">Información</h4>
                 <p><strong>Estudiante:</strong> <?php echo htmlspecialchars($submission['student_name'] ?? 'Desconocido'); ?></p>
                 <p><strong>Tarea:</strong> <?php echo htmlspecialchars($submission['task_title'] ?? 'Sin título'); ?></p>
-                <p><strong>Archivo:</strong> <a href="/cursos_app/<?php echo htmlspecialchars($submission['file_path'] ?? '#'); ?>" target="_blank" class="btn btn-sm btn-success" download>Descargar</a></p>
+                <p><strong>Archivo:</strong> <a href="/<?php echo htmlspecialchars($submission['file_path'] ?? '#'); ?>" target="_blank" class="btn btn-sm btn-success" download>Descargar</a></p>
             </div>
             <div class="col-md-8 bg-light p-3">
                 <h4 class="text-success">Calificación</h4>

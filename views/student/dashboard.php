@@ -57,7 +57,7 @@ try {
                 <div class="card-body">
                     <h5 class="card-title">Cursos Inscritos</h5>
                     <p class="card-text display-5"><?php echo htmlspecialchars($total_courses); ?></p>
-                    <a href="/cursos_app/views/student/courses.php" class="btn btn-primary">Explorar Cursos</a>
+                    <a href="/views/student/courses.php" class="btn btn-primary">Explorar Cursos</a>
                 </div>
             </div>
         </div>
@@ -69,8 +69,8 @@ try {
                     <h5 class="card-title">Tareas Pendientes</h5>
                     <p class="card-text display-5"><?php echo htmlspecialchars($total_pending_tasks); ?></p>
                     <a href="<?php echo $first_course_id 
-                        ? "/cursos_app/views/student/tasks.php?course_id=$first_course_id" 
-                        : '/cursos_app/views/student/courses.php?error=Inscríbete en un curso primero'; ?>" 
+                        ? "/views/student/tasks.php?course_id=$first_course_id" 
+                        : '/views/student/courses.php?error=Inscríbete en un curso primero'; ?>" 
                         class="btn btn-primary">Ver Tareas</a>
                 </div>
             </div>
@@ -83,8 +83,8 @@ try {
                     <h5 class="card-title">Entregas Realizadas</h5>
                     <p class="card-text display-5"><?php echo htmlspecialchars($total_submissions); ?></p>
                     <a href="<?php echo $first_course_id 
-                        ? "/cursos_app/views/student/submissions.php?course_id=$first_course_id" 
-                        : '/cursos_app/views/student/courses.php?error=Inscríbete en un curso primero'; ?>" 
+                        ? "/views/student/submissions.php?course_id=$first_course_id" 
+                        : '/views/student/courses.php?error=Inscríbete en un curso primero'; ?>" 
                         class="btn btn-primary">Ver Entregas</a>
                 </div>
             </div>

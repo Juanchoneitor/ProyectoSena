@@ -18,7 +18,7 @@ $role = $_SESSION['role'] ?? 'guest';
     <h1 class="text-center">Bienvenido a la Plataforma de Cursos</h1>
     <p class="text-center">Rol actual: <?php echo htmlspecialchars($role); ?></p>
     <?php if ($role !== 'guest' && basename($_SERVER['PHP_SELF']) === 'index.php'): ?>
-        <p class="text-center"><a href="/cursos_app/views/<?php echo $role; ?>/dashboard.php" class="btn btn-primary">Ir a tu Dashboard</a></p>
+        <p class="text-center"><a href="/views/<?php echo $role; ?>/dashboard.php" class="btn btn-primary">Ir a tu Dashboard</a></p>
     <?php endif; ?>
 </div>
 
