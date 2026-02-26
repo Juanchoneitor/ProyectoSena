@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'create') {
         ");
         $stmt->execute([$title, $description, $category_id, $teacher_id]);
 
-        header("Location: ../views/teacher/courses.php?success=Curso creado correctamente");
+        header("Location: ./views/teacher/courses.php?success=Curso creado correctamente");
         exit;
 
     } catch (PDOException $e) {
