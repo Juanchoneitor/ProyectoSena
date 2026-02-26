@@ -9,12 +9,12 @@
 </footer>
 
 <style>
-    /* Agregar padding al body para que el contenido no quede tapado /
+    /* Agregar padding al body para que el contenido no quede tapado */
     body {
-        padding-bottom: 100px; / Espacio para el footer fijo /
+        padding-bottom: 100px; /* Espacio para el footer fijo */
         min-height: 100vh;
     }
-
+    
     .footer {
         position: fixed;
         bottom: 0;
@@ -25,19 +25,19 @@
         border-top: 1px solid #333;
         z-index: 1000;
     }
-
+    
     .footer-link {
         color: #fbbf24;
         text-decoration: none;
         font-weight: 500;
         transition: color 0.2s ease;
     }
-
+    
     .footer-link:hover {
         color: #facc15;
     }
-
-    / Responsive - Ajustar padding en móviles */
+    
+    /* Responsive - Ajustar padding en móviles */
     @media (max-width: 768px) {
         body {
             padding-bottom: 120px;

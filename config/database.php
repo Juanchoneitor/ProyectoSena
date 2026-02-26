@@ -14,4 +14,13 @@ try {
     error_log($error_msg);
     die("<div style='color:red;'>Error de conexión. Revisa la configuración de la base de datos.</div>");
 }
+
+// Guardar sesiones en DB para que persistan en producción
+if (session_status() === PHP_SESSION_NONE) {
+    ini_set('session.save_handler', 'files');
+    ini_set('session.save_path', sys_get_temp_dir());
+    ini_set('session.gc_maxlifetime', 86400);
+    ini_set('session.cookie_lifetime', 86400);
+    ini_set('session.cookie_samesite', 'Lax');
+}
 ?>
