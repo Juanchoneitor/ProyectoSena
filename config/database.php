@@ -1,4 +1,5 @@
 <?php
+ob_start();
 $host     = getenv('DB_HOST')     ?: 'localhost';
 $port     = getenv('DB_PORT')     ?: '3306';
 $db_name  = getenv('DB_NAME')     ?: 'cursos_app';
