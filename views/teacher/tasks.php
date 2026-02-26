@@ -22,8 +22,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'teacher') {
 
 $teacherId = $_SESSION['user_id'];
 
-$success = filter_input(INPUT_GET, 'success', FILTER_SANITIZE_STRING);
-$error   = filter_input(INPUT_GET, 'error', FILTER_SANITIZE_STRING);
+$success = filter_input(INPUT_GET, 'success');
+$error   = filter_input(INPUT_GET, 'error');
 
 // ✅ NUEVO: course_id opcional (viene desde courses.php con "Ver Tareas")
 $courseId = filter_input(INPUT_GET, 'course_id', FILTER_VALIDATE_INT);
