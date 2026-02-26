@@ -35,7 +35,7 @@ $courses = $pdo->query("SELECT c.*, u.username as teacher_name, cat.name as cate
         <div class="card-header">Crear Nuevo Curso</div>
         <div class="card-body">
             <form method="POST" action="../controllers/courseController.php?action=create">
-                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token'] ?? ''; ?>">
                 <div class="mb-3">
                     <label for="title" class="form-label">Título</label>
                     <input type="text" class="form-control" id="title" name="title" required>
