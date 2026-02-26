@@ -1,0 +1,1386 @@
+Iniciado: 2025-07-06 05:23:51
+POST: Array
+(
+    [csrf_token] => 8789dcff21016e92acf73be52f6f0352f2a60d00a8c8d529a46714afa8fd24a8
+    [course_id] => 3
+    [title] => regerg
+    [description] => erer
+    [due_date] => 2025-07-09
+)
+
+SESSION: 
+Nuevo CSRF generado: e9855d93cd228789d645cb8f4f7f0a1c1dca9f80ac17d85d3a82377e506e367b
+CSRF Validación desactivada temporalmente. Session=e9855d93cd228789d645cb8f4f7f0a1c1dca9f80ac17d85d3a82377e506e367b, Post=8789dcff21016e92acf73be52f6f0352f2a60d00a8c8d529a46714afa8fd24a8
+Datos recibidos: course_id=3, title=regerg, description=erer, due_date=2025-07-09
+Iniciado: 2025-07-06 05:24:49
+POST: Array
+(
+    [csrf_token] => 8789dcff21016e92acf73be52f6f0352f2a60d00a8c8d529a46714afa8fd24a8
+    [course_id] => 3
+    [title] => 222
+    [description] => 22
+    [due_date] => 2025-07-23
+)
+
+SESSION: 
+Nuevo CSRF generado: 4abf72863196f4ad00f020afb8c49c12a73642fb6eaa8a411581df40d7839b82
+CSRF Validación desactivada temporalmente. Session=4abf72863196f4ad00f020afb8c49c12a73642fb6eaa8a411581df40d7839b82, Post=8789dcff21016e92acf73be52f6f0352f2a60d00a8c8d529a46714afa8fd24a8
+Datos recibidos: course_id=3, title=222, description=22, due_date=2025-07-23
+Iniciado: 2025-07-06 06:03:13
+POST: Array
+(
+    [csrf_token] => 8789dcff21016e92acf73be52f6f0352f2a60d00a8c8d529a46714afa8fd24a8
+    [id] => 1
+    [course_id] => 3
+    [title] => ooooo
+    [description] => erer
+    [due_date] => 2025-07-09
+)
+
+SESSION: 
+Nuevo CSRF generado: e8256d81d6867e163b7f3276bb0635b5bfa31bafba2fb39261a9650491ef6c81
+CSRF Validación desactivada temporalmente. Session=e8256d81d6867e163b7f3276bb0635b5bfa31bafba2fb39261a9650491ef6c81, Post=8789dcff21016e92acf73be52f6f0352f2a60d00a8c8d529a46714afa8fd24a8
+Datos recibidos para update: id=1, course_id=3, title=ooooo, description=erer, due_date=2025-07-09
+Iniciado: 2025-07-06 06:04:50
+POST: Array
+(
+)
+
+SESSION: 
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php, Time: 2025-07-11 17:10:04, POST: Array
+(
+    [action] => enroll
+    [csrf_token] => 9166a7b1e3592f2bb63e276fefa4dd7f6df5e701477656cf956713ccee77bb17
+    [course_id] => 3
+)
+, SESSION: Array
+(
+    [user_id] => 1
+    [role] => student
+    [username] => Juan 
+    [csrf_token] => 9166a7b1e3592f2bb63e276fefa4dd7f6df5e701477656cf956713ccee77bb17
+)
+
+Procesando POST - CSRF Post: 9166a7b1e3592f2bb63e276fefa4dd7f6df5e701477656cf956713ccee77bb17, CSRF Session: 9166a7b1e3592f2bb63e276fefa4dd7f6df5e701477656cf956713ccee77bb17
+Intento de inscripción - course_id: 3, student_id: 1, role: student
+Error SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'active' in 'where clause' - course_id: 3, student_id: 1
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php, Time: 2025-07-11 17:11:35, POST: Array
+(
+    [action] => enroll
+    [csrf_token] => 9166a7b1e3592f2bb63e276fefa4dd7f6df5e701477656cf956713ccee77bb17
+    [course_id] => 3
+)
+, SESSION: Array
+(
+    [user_id] => 1
+    [role] => student
+    [username] => Juan 
+    [csrf_token] => 9166a7b1e3592f2bb63e276fefa4dd7f6df5e701477656cf956713ccee77bb17
+)
+
+Procesando POST - CSRF Post: 9166a7b1e3592f2bb63e276fefa4dd7f6df5e701477656cf956713ccee77bb17, CSRF Session: 9166a7b1e3592f2bb63e276fefa4dd7f6df5e701477656cf956713ccee77bb17
+Intento de inscripción - course_id: 3, student_id: 1, role: student
+Inscripción exitosa - course_id: 3, student_id: 1
+Iniciado: 2025-07-21 15:12:46
+POST: Array
+(
+    [csrf_token] => 85cbcdb8710baab12a7a3ecf4f57f7f78ab9731b98ebe7cce65bc0a3465f8317
+    [course_id] => 3
+    [title] => poo
+    [description] => wddwdw
+    [due_date] => 2025-07-31
+)
+
+SESSION: 
+Nuevo CSRF generado: b9ab9406947c1a194cf7ff7d78254b1a355a076634d4fccc3702df2432fcdfe3
+CSRF Validación desactivada temporalmente. Session=b9ab9406947c1a194cf7ff7d78254b1a355a076634d4fccc3702df2432fcdfe3, Post=85cbcdb8710baab12a7a3ecf4f57f7f78ab9731b98ebe7cce65bc0a3465f8317
+Solicitud recibida - Method: GET, URI: /cursos_app/controllers/courseController.php?action=delete&id=6, Time: 2025-07-21 23:20:06, POST: Array
+(
+)
+, SESSION: Array
+(
+    [user_id] => 2
+    [role] => teacher
+    [username] => thomas
+    [csrf_token] => 2e790f4b76deb83a1aa18c7802dc5e14a162498794543736bf62e0a0a1256b48
+)
+
+Solicitud recibida - Method: GET, URI: /cursos_app/controllers/courseController.php?action=delete&id=6, Time: 2025-07-21 23:20:07, POST: Array
+(
+)
+, SESSION: Array
+(
+    [user_id] => 2
+    [role] => teacher
+    [username] => thomas
+    [csrf_token] => 2e790f4b76deb83a1aa18c7802dc5e14a162498794543736bf62e0a0a1256b48
+)
+
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=create, Time: 2025-07-21 23:20:32, POST: Array
+(
+    [csrf_token] => 2e790f4b76deb83a1aa18c7802dc5e14a162498794543736bf62e0a0a1256b48
+    [teacher_id] => 2
+    [title] => html
+    [description] => ddqdqdq
+    [category_id] => 1
+)
+, SESSION: Array
+(
+    [user_id] => 2
+    [role] => teacher
+    [username] => thomas
+    [csrf_token] => 2e790f4b76deb83a1aa18c7802dc5e14a162498794543736bf62e0a0a1256b48
+)
+
+Procesando POST - CSRF Post: 2e790f4b76deb83a1aa18c7802dc5e14a162498794543736bf62e0a0a1256b48, CSRF Session: 2e790f4b76deb83a1aa18c7802dc5e14a162498794543736bf62e0a0a1256b48
+Iniciado: 2025-07-21 23:21:48
+POST: Array
+(
+    [csrf_token] => 2e790f4b76deb83a1aa18c7802dc5e14a162498794543736bf62e0a0a1256b48
+    [course_id] => 3
+    [title] => diagrama de flujo
+    [description] => qwdwqdqwd
+    [due_date] => 2025-07-30
+)
+
+SESSION: 
+Nuevo CSRF generado: a38aa61ae4cdc29736981c1e0668fef4f9582b91af74f5d50936262f38e2dd0b
+CSRF Validación desactivada temporalmente. Session=a38aa61ae4cdc29736981c1e0668fef4f9582b91af74f5d50936262f38e2dd0b, Post=2e790f4b76deb83a1aa18c7802dc5e14a162498794543736bf62e0a0a1256b48
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php, Time: 2025-09-20 18:06:12, POST: Array
+(
+    [action] => enroll
+    [csrf_token] => 0cfba625015bc69b7ce0a9263cf693c22db7e9cecee9ac63f933265abefbdf5b
+    [course_id] => 5
+)
+, SESSION: Array
+(
+    [csrf_token] => 0cfba625015bc69b7ce0a9263cf693c22db7e9cecee9ac63f933265abefbdf5b
+    [user_id] => 1
+    [role] => student
+    [username] => Juan 
+)
+
+Procesando POST - CSRF Post: 0cfba625015bc69b7ce0a9263cf693c22db7e9cecee9ac63f933265abefbdf5b, CSRF Session: 0cfba625015bc69b7ce0a9263cf693c22db7e9cecee9ac63f933265abefbdf5b
+Intento de inscripción - course_id: 5, student_id: 1, role: student
+Inscripción exitosa - course_id: 5, student_id: 1
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php, Time: 2025-09-20 18:06:39, POST: Array
+(
+    [action] => enroll
+    [csrf_token] => 0cfba625015bc69b7ce0a9263cf693c22db7e9cecee9ac63f933265abefbdf5b
+    [course_id] => 9
+)
+, SESSION: Array
+(
+    [csrf_token] => 0cfba625015bc69b7ce0a9263cf693c22db7e9cecee9ac63f933265abefbdf5b
+    [user_id] => 1
+    [role] => student
+    [username] => Juan 
+)
+
+Procesando POST - CSRF Post: 0cfba625015bc69b7ce0a9263cf693c22db7e9cecee9ac63f933265abefbdf5b, CSRF Session: 0cfba625015bc69b7ce0a9263cf693c22db7e9cecee9ac63f933265abefbdf5b
+Intento de inscripción - course_id: 9, student_id: 1, role: student
+Inscripción exitosa - course_id: 9, student_id: 1
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=create, Time: 2025-09-24 18:25:07, POST: Array
+(
+    [csrf_token] => 
+    [teacher_id] => 2
+    [title] => BASE DE DATOS 
+    [description] => En este curso vas aprender a manejar base de datos relacional y no relacional 
+    [category_id] => 5
+)
+, SESSION: Array
+(
+    [user_id] => 2
+    [role] => teacher
+    [username] => thomas
+)
+
+Procesando POST - CSRF Post: , CSRF Session: c305b13ba46d5075d124a02e45e12436b5ab158859929477c6b9deb4400baa58
+Error CSRF - Token recibido: , Token esperado: c305b13ba46d5075d124a02e45e12436b5ab158859929477c6b9deb4400baa58
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=create, Time: 2025-11-19 04:27:33, POST: Array
+(
+    [csrf_token] => 
+    [teacher_id] => 4
+    [title] => Introducción al diseño web 
+    [description] => En este curso aprendera las bases para empezar en el mundo del desarrollo web
+    [category_id] => 1
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+)
+
+Procesando POST - CSRF Post: , CSRF Session: 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Error CSRF - Token recibido: , Token esperado: 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=create, Time: 2025-11-19 04:31:58, POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [teacher_id] => 4
+    [title] => lolooooo
+    [description] => ooo
+    [category_id] => 1
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+)
+
+Procesando POST - CSRF Post: 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa, CSRF Session: 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Iniciado: 2025-11-19 04:49:02
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [submission_id] => 
+    [grade] => 100
+    [feedback] => Muy buen trabajo
+)
+
+SESSION: 
+Nuevo CSRF generado: 600de838b4a598571c5aaa32540d4927a617778e58981ab3cf91d6b60c25f47a
+CSRF Validación desactivada temporalmente. Session=600de838b4a598571c5aaa32540d4927a617778e58981ab3cf91d6b60c25f47a, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Iniciado: 2025-11-19 04:49:16
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [submission_id] => 
+    [grade] => 10
+    [feedback] => biwn
+)
+
+SESSION: 
+Nuevo CSRF generado: 8adc9da795611f1ae3af787ace5e8945d73271bf8480cd3bbbe0c8f6da49553c
+CSRF Validación desactivada temporalmente. Session=8adc9da795611f1ae3af787ace5e8945d73271bf8480cd3bbbe0c8f6da49553c, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Iniciado: 2025-11-19 04:49:29
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [submission_id] => 
+    [grade] => 1
+    [feedback] => m
+)
+
+SESSION: 
+Nuevo CSRF generado: 076718f2949cd8da006b8d8ebcbd0907611415205452eb885b8913472934018f
+CSRF Validación desactivada temporalmente. Session=076718f2949cd8da006b8d8ebcbd0907611415205452eb885b8913472934018f, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Iniciado: 2025-11-19 04:58:57
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [submission_id] => 1
+    [grade] => 100
+    [feedback] => buen trabajo
+)
+
+SESSION: 
+Nuevo CSRF generado: b5cb09ce26c7fd75ce5aafbddb9ba8fb7916022ca2425bcd5b8008be5ede83ca
+CSRF Validación desactivada temporalmente. Session=b5cb09ce26c7fd75ce5aafbddb9ba8fb7916022ca2425bcd5b8008be5ede83ca, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Iniciado: 2025-11-19 05:00:00
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [submission_id] => 1
+    [grade] => 100
+    [feedback] => no
+)
+
+SESSION: 
+Nuevo CSRF generado: bc118b75c77f8a82b8e9a7093a452d00030af7efebf9b8bed59a424ae5952e55
+CSRF Validación desactivada temporalmente. Session=bc118b75c77f8a82b8e9a7093a452d00030af7efebf9b8bed59a424ae5952e55, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Iniciado: 2025-11-19 05:02:59
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [submission_id] => 1
+    [task_id] => 1
+    [student_id] => 1
+    [grade] => 10
+    [feedback] => bien
+)
+
+SESSION: 
+Nuevo CSRF generado: 8e163348f686f739f38b02f21c6ebdc2e74a82e53f22b66b744130561817d82c
+CSRF Validación desactivada temporalmente. Session=8e163348f686f739f38b02f21c6ebdc2e74a82e53f22b66b744130561817d82c, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Iniciado: 2025-11-19 05:03:36
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [submission_id] => 1
+    [task_id] => 1
+    [student_id] => 1
+    [grade] => 11
+    [feedback] => l
+)
+
+SESSION: 
+Nuevo CSRF generado: 0e234d05d96e8193f7b6f536484d0509c98fb16d4a60aa6cf2fd4f9455dc1fec
+CSRF Validación desactivada temporalmente. Session=0e234d05d96e8193f7b6f536484d0509c98fb16d4a60aa6cf2fd4f9455dc1fec, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Iniciado: 2025-11-19 05:09:21
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [submission_id] => 1
+    [task_id] => 1
+    [student_id] => 1
+    [grade] => 9.7
+    [feedback] => bien
+)
+
+SESSION: 
+Nuevo CSRF generado: f0cb89e625ba316c0ab97e92f8bb4b25354cc66a92407c3d52a6d429831f7b67
+CSRF Validación desactivada temporalmente. Session=f0cb89e625ba316c0ab97e92f8bb4b25354cc66a92407c3d52a6d429831f7b67, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Grade Action - submission_id: 1, grade: 9.7, feedback: bien
+Iniciado: 2025-11-19 05:09:40
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [submission_id] => 2
+    [task_id] => 3
+    [student_id] => 1
+    [grade] => 8.0
+    [feedback] => Buen trabajo
+)
+
+SESSION: 
+Nuevo CSRF generado: 0f16015c7563cf2138500899d480da5b14c521c17c9225da4b3621919ddfdea5
+CSRF Validación desactivada temporalmente. Session=0f16015c7563cf2138500899d480da5b14c521c17c9225da4b3621919ddfdea5, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Grade Action - submission_id: 2, grade: 8, feedback: Buen trabajo
+Iniciado: 2025-11-19 05:10:31
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [course_id] => 3
+    [title] => diseño web 2.0
+    [description] => Hacer mocukps de la pagina 
+    [due_date] => 2025-11-27
+)
+
+SESSION: 
+Nuevo CSRF generado: 8f1aaaa1f0b6ef3afa7521d2c35ae58b4256d56e87f94d9516b65faef1ce2d59
+CSRF Validación desactivada temporalmente. Session=8f1aaaa1f0b6ef3afa7521d2c35ae58b4256d56e87f94d9516b65faef1ce2d59, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Iniciado: 2025-11-19 05:18:26
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [course_id] => 10
+    [title] => MER
+    [description] => modelado de bd
+    [due_date] => 2025-11-26
+)
+
+SESSION: 
+Nuevo CSRF generado: 02a990e891c8004426d0b7fdd02beb22e2400c6d487d985b4f3a8eef05384bad
+CSRF Validación desactivada temporalmente. Session=02a990e891c8004426d0b7fdd02beb22e2400c6d487d985b4f3a8eef05384bad, Post=74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+Material Controller - Iniciado: 2025-11-19 05:39:09
+POST: Array
+(
+    [csrf_token] => 74901af5f84a026d7b0b08e0d124cc1a759c926a7a6f80f94382621f932c7ffa
+    [course_id] => 10
+    [content_type] => file
+    [title] => material
+    [description] => ddww
+    [content_url] => 
+    [content_text] => 
+)
+
+FILES: Array
+(
+    [file] => Array
+        (
+            [name] => WhatsApp Image 2025-11-18 at 1.46.14 PM (5).jpeg
+            [full_path] => WhatsApp Image 2025-11-18 at 1.46.14 PM (5).jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpB194.tmp
+            [error] => 0
+            [size] => 140729
+        )
+
+)
+
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php, Time: 2025-11-19 05:52:53, POST: Array
+(
+    [action] => enroll
+    [csrf_token] => 86cf47bce6bfae29ce71c6fef6de6e19b90377811c905c73566c81892ea4362d
+    [course_id] => 10
+)
+, SESSION: Array
+(
+    [user_id] => 1
+    [role] => student
+    [username] => Juan
+    [csrf_token] => 86cf47bce6bfae29ce71c6fef6de6e19b90377811c905c73566c81892ea4362d
+)
+
+Procesando POST - CSRF Post: 86cf47bce6bfae29ce71c6fef6de6e19b90377811c905c73566c81892ea4362d, CSRF Session: 86cf47bce6bfae29ce71c6fef6de6e19b90377811c905c73566c81892ea4362d
+Intento de inscripción - course_id: 10, student_id: 1, role: student
+Inscripción exitosa - course_id: 10, student_id: 1
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=create, Time: 2025-11-19 18:24:34, POST: Array
+(
+    [csrf_token] => 
+    [teacher_id] => 4
+    [title] => Programacion avanzada
+    [description] => dqdqwdqwdqwd
+    [category_id] => 2
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => e1bbedb16c6547cbc5684506962a2ce9784e3d1d5f7bc41773ebf03d3c125b20
+)
+
+Procesando POST - CSRF Post: , CSRF Session: e1bbedb16c6547cbc5684506962a2ce9784e3d1d5f7bc41773ebf03d3c125b20
+Error CSRF - Token recibido: , Token esperado: e1bbedb16c6547cbc5684506962a2ce9784e3d1d5f7bc41773ebf03d3c125b20
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=create, Time: 2025-11-19 18:25:28, POST: Array
+(
+    [csrf_token] => e1bbedb16c6547cbc5684506962a2ce9784e3d1d5f7bc41773ebf03d3c125b20
+    [teacher_id] => 4
+    [title] => ththhth
+    [description] => tthth
+    [category_id] => 1
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => e1bbedb16c6547cbc5684506962a2ce9784e3d1d5f7bc41773ebf03d3c125b20
+)
+
+Procesando POST - CSRF Post: e1bbedb16c6547cbc5684506962a2ce9784e3d1d5f7bc41773ebf03d3c125b20, CSRF Session: e1bbedb16c6547cbc5684506962a2ce9784e3d1d5f7bc41773ebf03d3c125b20
+Iniciado: 2025-11-19 18:25:52
+POST: Array
+(
+    [csrf_token] => e1bbedb16c6547cbc5684506962a2ce9784e3d1d5f7bc41773ebf03d3c125b20
+    [submission_id] => 1
+    [task_id] => 1
+    [student_id] => 1
+    [grade] => 9.70
+    [feedback] => mal trabajo
+)
+
+SESSION: 
+Nuevo CSRF generado: c7c114fc54e0ac482b3b9786df3a8458a18bb4f612c2dbd80f427dc9d05c1b21
+CSRF Validación desactivada temporalmente. Session=c7c114fc54e0ac482b3b9786df3a8458a18bb4f612c2dbd80f427dc9d05c1b21, Post=e1bbedb16c6547cbc5684506962a2ce9784e3d1d5f7bc41773ebf03d3c125b20
+Grade Action - submission_id: 1, grade: 9.7, feedback: mal trabajo
+Material Controller - Iniciado: 2025-11-19 18:26:34
+POST: Array
+(
+)
+
+FILES: Array
+(
+)
+
+Material Controller - Iniciado: 2025-11-19 18:26:59
+POST: Array
+(
+    [csrf_token] => e1bbedb16c6547cbc5684506962a2ce9784e3d1d5f7bc41773ebf03d3c125b20
+    [course_id] => 11
+    [content_type] => file
+    [title] => sss
+    [description] => sqsq
+    [content_url] => 
+    [content_text] => 
+)
+
+FILES: Array
+(
+    [file] => Array
+        (
+            [name] => WhatsApp Image 2025-11-18 at 1.46.14 PM (5).jpeg
+            [full_path] => WhatsApp Image 2025-11-18 at 1.46.14 PM (5).jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpDAAF.tmp
+            [error] => 0
+            [size] => 140729
+        )
+
+)
+
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php, Time: 2025-11-19 18:27:37, POST: Array
+(
+    [action] => enroll
+    [csrf_token] => a368f0f3b771ab0c698f24919b156e4f8b0aa3e69f8fff2c87d1617e5cb9e0ed
+    [course_id] => 11
+)
+, SESSION: Array
+(
+    [user_id] => 1
+    [role] => student
+    [username] => Juan
+    [csrf_token] => a368f0f3b771ab0c698f24919b156e4f8b0aa3e69f8fff2c87d1617e5cb9e0ed
+)
+
+Procesando POST - CSRF Post: a368f0f3b771ab0c698f24919b156e4f8b0aa3e69f8fff2c87d1617e5cb9e0ed, CSRF Session: a368f0f3b771ab0c698f24919b156e4f8b0aa3e69f8fff2c87d1617e5cb9e0ed
+Intento de inscripción - course_id: 11, student_id: 1, role: student
+Inscripción exitosa - course_id: 11, student_id: 1
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php, Time: 2025-11-20 17:45:00, POST: Array
+(
+    [action] => enroll
+    [csrf_token] => 739b80d59494fcdae99b54b56af8a31b9843304290862678949e8193c3bf7c77
+    [course_id] => 4
+)
+, SESSION: Array
+(
+    [user_id] => 1
+    [role] => student
+    [username] => Juan
+    [csrf_token] => 739b80d59494fcdae99b54b56af8a31b9843304290862678949e8193c3bf7c77
+)
+
+Procesando POST - CSRF Post: 739b80d59494fcdae99b54b56af8a31b9843304290862678949e8193c3bf7c77, CSRF Session: 739b80d59494fcdae99b54b56af8a31b9843304290862678949e8193c3bf7c77
+Intento de inscripción - course_id: 4, student_id: 1, role: student
+Inscripción exitosa - course_id: 4, student_id: 1
+Iniciado: 2025-11-20 17:47:44
+POST: Array
+(
+    [csrf_token] => b5d9180bbb509a85c08096ff93291d6738eed4feb0fc71752a3009c2913ece27
+    [id] => 1
+    [course_id] => 9
+    [title] => ooooo
+    [description] => erer
+    [due_date] => 2025-07-09
+)
+
+SESSION: 
+Nuevo CSRF generado: 3bb2a608587213537ef74f7afd03f1ae6c41359f153da71844982aa8154e9a8d
+CSRF Validación desactivada temporalmente. Session=3bb2a608587213537ef74f7afd03f1ae6c41359f153da71844982aa8154e9a8d, Post=b5d9180bbb509a85c08096ff93291d6738eed4feb0fc71752a3009c2913ece27
+Iniciado: 2025-11-20 18:09:08
+POST: Array
+(
+    [csrf_token] => c4f595cc0b4bbe5d85995401602e4490802bcdb201e3559ec7753b854ee88faa
+    [id] => 1
+    [course_id] => 3
+    [title] => ooooo
+    [description] => erer
+    [due_date] => 2025-07-09
+)
+
+SESSION: 
+Nuevo CSRF generado: 98265b94eb838233116f98cd64fac81b9e12ee12467e62e95d567666eba42774
+CSRF Validación desactivada temporalmente. Session=98265b94eb838233116f98cd64fac81b9e12ee12467e62e95d567666eba42774, Post=c4f595cc0b4bbe5d85995401602e4490802bcdb201e3559ec7753b854ee88faa
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=create, Time: 2025-11-25 23:25:36, POST: Array
+(
+    [csrf_token] => 
+    [teacher_id] => 4
+    [title] => Ciencias sociales 
+    [description] => dnjwnjdnwkldwd
+    [category_id] => 4
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+)
+
+Procesando POST - CSRF Post: , CSRF Session: 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2
+Error CSRF - Token recibido: , Token esperado: 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=create, Time: 2025-11-25 23:27:27, POST: Array
+(
+    [csrf_token] => 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2
+    [teacher_id] => 4
+    [title] => ciencias sociales
+    [description] => wwdwq
+    [category_id] => 1
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2
+)
+
+Procesando POST - CSRF Post: 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2, CSRF Session: 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2
+Solicitud recibida - Method: GET, URI: /cursos_app/controllers/courseController.php?action=delete&id=12, Time: 2025-11-25 23:27:31, POST: Array
+(
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2
+)
+
+Solicitud recibida - Method: GET, URI: /cursos_app/controllers/courseController.php?action=delete&id=12, Time: 2025-11-25 23:27:37, POST: Array
+(
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2
+)
+
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=create, Time: 2025-11-25 23:32:31, POST: Array
+(
+    [csrf_token] => 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2
+    [teacher_id] => 4
+    [title] => Ciencias Politidwdw
+    [description] => wdwd
+    [category_id] => 4
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2
+)
+
+Procesando POST - CSRF Post: 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2, CSRF Session: 8f1ca259ccdbe88d368b60b69b9096a814950d9f67b9dcd36254cc5321d4d2d2
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php, Time: 2025-11-27 13:38:33, POST: Array
+(
+    [action] => enroll
+    [csrf_token] => e674bdc870196e63e5c86d95b6f078127397ad612aee22b27b60ed47bdc8cccb
+    [course_id] => 13
+)
+, SESSION: Array
+(
+    [csrf_token] => e674bdc870196e63e5c86d95b6f078127397ad612aee22b27b60ed47bdc8cccb
+    [user_id] => 1
+    [role] => student
+    [username] => Juan
+)
+
+Procesando POST - CSRF Post: e674bdc870196e63e5c86d95b6f078127397ad612aee22b27b60ed47bdc8cccb, CSRF Session: e674bdc870196e63e5c86d95b6f078127397ad612aee22b27b60ed47bdc8cccb
+Intento de inscripción - course_id: 13, student_id: 1, role: student
+Inscripción exitosa - course_id: 13, student_id: 1
+Iniciado: 2025-11-27 13:39:59
+POST: Array
+(
+    [csrf_token] => 7b267fe0da85be7118bf7c1f29725d7be608eaf7dc5ed6f85ba2d8d395ca8d59
+    [id] => 1
+    [course_id] => 3
+    [title] => oo
+    [description] => erer
+    [due_date] => 2025-07-09
+)
+
+SESSION: 
+Nuevo CSRF generado: 871119a05ef4977986906c58799d780ba009e32c806701ba3eb7f90def12d9c9
+CSRF Validación desactivada temporalmente. Session=871119a05ef4977986906c58799d780ba009e32c806701ba3eb7f90def12d9c9, Post=7b267fe0da85be7118bf7c1f29725d7be608eaf7dc5ed6f85ba2d8d395ca8d59
+Iniciado: 2025-11-27 13:42:33
+POST: Array
+(
+)
+
+SESSION: 
+Iniciado: 2025-11-27 14:29:32
+POST: Array
+(
+    [csrf_token] => 16806dfa7c7e793002a98ff955ec6bd1966949c1854ba2ccc38c183364b418b4
+    [submission_id] => 4
+    [task_id] => 5
+    [student_id] => 1
+    [grade] => 2
+    [feedback] => fffff
+)
+
+SESSION: 
+Nuevo CSRF generado: 37fea7dd61b6251997d55b73083a459505ebc7a5a49becdfb70e22b4960ea892
+CSRF Validación desactivada temporalmente. Session=37fea7dd61b6251997d55b73083a459505ebc7a5a49becdfb70e22b4960ea892, Post=16806dfa7c7e793002a98ff955ec6bd1966949c1854ba2ccc38c183364b418b4
+Grade Action - submission_id: 4, grade: 2, feedback: fffff
+Iniciado: 2025-11-27 14:30:04
+POST: Array
+(
+    [csrf_token] => 16806dfa7c7e793002a98ff955ec6bd1966949c1854ba2ccc38c183364b418b4
+    [course_id] => 10
+    [title] => Como mejorar la logica
+    [description] => wddwdw
+    [due_date] => 2025-11-28
+)
+
+SESSION: 
+Nuevo CSRF generado: 7d6c939abd351edaa1987534593c7f94d151c0f76d4b2bda24a5b06b8a3fe787
+CSRF Validación desactivada temporalmente. Session=7d6c939abd351edaa1987534593c7f94d151c0f76d4b2bda24a5b06b8a3fe787, Post=16806dfa7c7e793002a98ff955ec6bd1966949c1854ba2ccc38c183364b418b4
+Iniciado: 2025-11-27 14:30:12
+POST: Array
+(
+    [csrf_token] => 16806dfa7c7e793002a98ff955ec6bd1966949c1854ba2ccc38c183364b418b4
+    [id] => 7
+    [course_id] => 10
+    [title] => Como mejorar la logica
+    [description] => w
+    [due_date] => 2025-11-28
+)
+
+SESSION: 
+Nuevo CSRF generado: c1af82c4def6288be4f67c92fcee143585cc3696ae4ca48bfbdc00288482e162
+CSRF Validación desactivada temporalmente. Session=c1af82c4def6288be4f67c92fcee143585cc3696ae4ca48bfbdc00288482e162, Post=16806dfa7c7e793002a98ff955ec6bd1966949c1854ba2ccc38c183364b418b4
+Solicitud recibida - Method: GET, URI: /cursos_app/controllers/courseController.php?action=delete&id=13, Time: 2025-11-27 14:30:37, POST: Array
+(
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => 16806dfa7c7e793002a98ff955ec6bd1966949c1854ba2ccc38c183364b418b4
+)
+
+Iniciado: 2025-11-27 14:43:22
+POST: Array
+(
+    [csrf_token] => ef4e2416eb47f967f54192e4f4bdcaf8a729d934e0f9c5297bd2736d66eb5e0a
+    [submission_id] => 4
+    [task_id] => 5
+    [student_id] => 1
+    [grade] => 2.00
+    [feedback] => fff
+)
+
+SESSION: 
+Nuevo CSRF generado: df88da86b8c12f275ff48b9d249a4d9394fbbff37bb4d59bce444709d3b3677f
+CSRF Validación desactivada temporalmente. Session=df88da86b8c12f275ff48b9d249a4d9394fbbff37bb4d59bce444709d3b3677f, Post=ef4e2416eb47f967f54192e4f4bdcaf8a729d934e0f9c5297bd2736d66eb5e0a
+Grade Action - submission_id: 4, grade: 2, feedback: fff
+Iniciado: 2025-11-27 14:43:29
+POST: Array
+(
+    [csrf_token] => ef4e2416eb47f967f54192e4f4bdcaf8a729d934e0f9c5297bd2736d66eb5e0a
+    [submission_id] => 4
+    [task_id] => 5
+    [student_id] => 1
+    [grade] => 2.00
+    [feedback] => f
+)
+
+SESSION: 
+Nuevo CSRF generado: 79777bc505a82ac59f0615b7f2909d2e10d5372c7653e368909963ca16e38700
+CSRF Validación desactivada temporalmente. Session=79777bc505a82ac59f0615b7f2909d2e10d5372c7653e368909963ca16e38700, Post=ef4e2416eb47f967f54192e4f4bdcaf8a729d934e0f9c5297bd2736d66eb5e0a
+Grade Action - submission_id: 4, grade: 2, feedback: f
+Iniciado: 2025-11-27 15:04:37
+POST: Array
+(
+    [csrf_token] => c52c55b381d02779ecc408b0cdf20fccd7c140ddde3bee06e362f923f63b54d8
+    [submission_id] => 4
+    [task_id] => 5
+    [student_id] => 1
+    [grade] => 2.00
+    [feedback] => fjjj
+)
+
+SESSION: 
+Nuevo CSRF generado: bab0c3f29f2aff489ef915189af1227feebeae32fadf906304d654a2d47b5efc
+CSRF Validación desactivada temporalmente. Session=bab0c3f29f2aff489ef915189af1227feebeae32fadf906304d654a2d47b5efc, Post=c52c55b381d02779ecc408b0cdf20fccd7c140ddde3bee06e362f923f63b54d8
+Grade Action - submission_id: 4, grade: 2, feedback: fjjj
+Iniciado: 2025-11-27 17:26:59
+POST: Array
+(
+)
+
+SESSION: 
+Iniciado: 2025-11-27 17:38:16
+POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 7
+)
+
+SESSION: 
+Nuevo CSRF generado: 76ea151356ec2d48b02102a71ba6dd1d6a229561596da52f8bcef77a5d571137
+CSRF Validación desactivada temporalmente. Session=76ea151356ec2d48b02102a71ba6dd1d6a229561596da52f8bcef77a5d571137, Post=bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Iniciado: 2025-11-27 17:38:26
+POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 1
+)
+
+SESSION: 
+Nuevo CSRF generado: 7b8209264dfd6f63632e6a4eb6d8b4fd69b0e17be38fec63374999bd9216837f
+CSRF Validación desactivada temporalmente. Session=7b8209264dfd6f63632e6a4eb6d8b4fd69b0e17be38fec63374999bd9216837f, Post=bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Iniciado: 2025-11-27 17:38:52
+POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 7
+)
+
+SESSION: 
+Nuevo CSRF generado: 84fc00ea76ad4540249d70222e360621e33027b98ff01d7147428c7292ebf35a
+CSRF Validación desactivada temporalmente. Session=84fc00ea76ad4540249d70222e360621e33027b98ff01d7147428c7292ebf35a, Post=bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Iniciado: 2025-11-27 17:43:09
+POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 7
+)
+
+GET: Array
+(
+    [action] => delete
+)
+
+SESSION: 
+Nuevo CSRF generado: 6361608de6b7711e367110f84e57f60863d9eadcc8dcfbcc40324f979cf98fc0
+CSRF Validación desactivada temporalmente. Session=6361608de6b7711e367110f84e57f60863d9eadcc8dcfbcc40324f979cf98fc0, Post=bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Delete Action - task_id recibido: 7
+Tarea eliminada exitosamente: ID 7
+Iniciado: 2025-11-27 17:43:28
+POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 5
+)
+
+GET: Array
+(
+    [action] => delete
+)
+
+SESSION: 
+Nuevo CSRF generado: b011788c330a4be54bd941e82cc5ad6bab4ab765068adeca6304fedc5729918e
+CSRF Validación desactivada temporalmente. Session=b011788c330a4be54bd941e82cc5ad6bab4ab765068adeca6304fedc5729918e, Post=bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Delete Action - task_id recibido: 5
+Tarea eliminada exitosamente: ID 5
+Iniciado: 2025-11-27 17:43:40
+POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 4
+)
+
+GET: Array
+(
+    [action] => delete
+)
+
+SESSION: 
+Nuevo CSRF generado: e802b7f2afd96283425214a596a1046f55a273549db3e35c079a132bdd0744f4
+CSRF Validación desactivada temporalmente. Session=e802b7f2afd96283425214a596a1046f55a273549db3e35c079a132bdd0744f4, Post=bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Delete Action - task_id recibido: 4
+Tarea eliminada exitosamente: ID 4
+Solicitud recibida - Method: GET, URI: /cursos_app/controllers/courseController.php?action=delete&id=11, Time: 2025-11-27 17:43:50, POST: Array
+(
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+)
+
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=create, Time: 2025-11-27 17:44:58, POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [teacher_id] => 4
+    [title] => jejejee2
+    [description] => eee
+    [category_id] => 1
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+)
+
+Procesando POST - CSRF Post: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067, CSRF Session: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=delete, Time: 2025-11-27 17:46:36, POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 14
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+)
+
+Procesando POST - CSRF Post: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067, CSRF Session: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=delete, Time: 2025-11-27 17:46:51, POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 14
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+)
+
+Procesando POST - CSRF Post: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067, CSRF Session: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=delete, Time: 2025-11-27 17:47:47, POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 14
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+)
+
+Procesando POST - CSRF Post: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067, CSRF Session: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=delete, Time: 2025-11-27 17:49:53, POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 14
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+)
+
+Procesando POST - CSRF Post: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067, CSRF Session: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=delete, Time: 2025-11-27 17:51:07, POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 14
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+)
+
+Procesando POST - CSRF Post: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067, CSRF Session: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Solicitud recibida - Method: POST, URI: /cursos_app/controllers/courseController.php?action=delete, Time: 2025-11-27 17:56:15, POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [id] => 14
+)
+, SESSION: Array
+(
+    [user_id] => 4
+    [role] => teacher
+    [username] => Nicolle
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+)
+
+Procesando POST - CSRF Post: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067, CSRF Session: bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Iniciado: 2025-11-27 17:59:06
+POST: Array
+(
+    [csrf_token] => bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+    [submission_id] => 2
+    [task_id] => 3
+    [student_id] => 1
+    [grade] => 8
+    [feedback] => Buen trabajo
+)
+
+GET: Array
+(
+    [action] => grade
+)
+
+SESSION: 
+Nuevo CSRF generado: bed65dca0448bcb1a28eb9d4d3a5eb55d5c3acfadd99d74a61cf420838f3de46
+CSRF Validación desactivada temporalmente. Session=bed65dca0448bcb1a28eb9d4d3a5eb55d5c3acfadd99d74a61cf420838f3de46, Post=bd32cf1f2873c1e15880fd6eb2e3e9bd7ea6cfa9f72609d0857c034ed797e067
+Grade Action - submission_id: 2, grade: 8, feedback: Buen trabajo
+Iniciado: 2025-12-11 05:17:57
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [course_id] => 18
+    [title] => ddd
+    [description] => aa
+    [due_date] => 2025-12-11
+)
+
+GET: Array
+(
+    [action] => create
+)
+
+SESSION: 
+Nuevo CSRF generado: 9f54536ffa8e93fc30a75460c88b11034e2fd5c77ae378543c84ec79922e971e
+CSRF Validación desactivada temporalmente. Session=9f54536ffa8e93fc30a75460c88b11034e2fd5c77ae378543c84ec79922e971e, Post=704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+Iniciado: 2025-12-11 05:28:05
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [submission_id] => 6
+    [task_id] => 8
+    [student_id] => 1
+    [grade] => 100
+    [feedback] => dd
+)
+
+GET: Array
+(
+    [action] => grade
+)
+
+SESSION: 
+Nuevo CSRF generado: 32c2ca6406b99faf1f968b952151f32d660ac6dcd428a34912e112212f57fb43
+CSRF Validación desactivada temporalmente. Session=32c2ca6406b99faf1f968b952151f32d660ac6dcd428a34912e112212f57fb43, Post=704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+Grade Action - submission_id: 6, grade: 100, feedback: dd
+Iniciado: 2025-12-11 05:28:55
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [id] => 8
+    [course_id] => 18
+    [title] => dd
+    [description] => aa
+    [due_date] => 2025-12-12
+)
+
+GET: Array
+(
+    [action] => update
+)
+
+SESSION: 
+Nuevo CSRF generado: 496b34e3dfb2d77a07c763237f7c5b6c4a871eba661f7d6aa1ea9568953b9969
+CSRF Validación desactivada temporalmente. Session=496b34e3dfb2d77a07c763237f7c5b6c4a871eba661f7d6aa1ea9568953b9969, Post=704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+Iniciado: 2025-12-11 05:29:25
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [submission_id] => 6
+    [task_id] => 8
+    [student_id] => 1
+    [grade] => 99.99
+    [feedback] => ññ
+)
+
+GET: Array
+(
+    [action] => grade
+)
+
+SESSION: 
+Nuevo CSRF generado: c0962488a821701666ed4e9f840a25b87523812b608a536dc18da7264c2cb34b
+CSRF Validación desactivada temporalmente. Session=c0962488a821701666ed4e9f840a25b87523812b608a536dc18da7264c2cb34b, Post=704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+Grade Action - submission_id: 6, grade: 99.99, feedback: ññ
+Iniciado: 2025-12-11 05:29:57
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [id] => 8
+    [course_id] => 18
+    [title] => dd
+    [description] => ap
+    [due_date] => 2025-12-12
+)
+
+GET: Array
+(
+    [action] => update
+)
+
+SESSION: 
+Nuevo CSRF generado: 78295f308f7cca584803da9f4f4f09d97595c32d31c718dcc6411558fa7d5faa
+CSRF Validación desactivada temporalmente. Session=78295f308f7cca584803da9f4f4f09d97595c32d31c718dcc6411558fa7d5faa, Post=704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+Iniciado: 2025-12-11 05:30:09
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [id] => 8
+    [course_id] => 18
+    [title] => dd
+    [description] => ap
+    [due_date] => 2025-12-19
+)
+
+GET: Array
+(
+    [action] => update
+)
+
+SESSION: 
+Nuevo CSRF generado: 5f0a9c01b093bcfd0f6c3036f83cc1e88dbb1bacfe50391eec0fd25187d66637
+CSRF Validación desactivada temporalmente. Session=5f0a9c01b093bcfd0f6c3036f83cc1e88dbb1bacfe50391eec0fd25187d66637, Post=704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+Iniciado: 2025-12-11 05:30:19
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [id] => 8
+    [course_id] => 18
+    [title] => 4444444444444444
+    [description] => ap
+    [due_date] => 2025-12-19
+)
+
+GET: Array
+(
+    [action] => update
+)
+
+SESSION: 
+Nuevo CSRF generado: 007f475dd6179102c728f94e23afd4231fbd4016ca3a8e64f081eac568e7536f
+CSRF Validación desactivada temporalmente. Session=007f475dd6179102c728f94e23afd4231fbd4016ca3a8e64f081eac568e7536f, Post=704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+Iniciado: 2025-12-11 05:30:29
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [id] => 8
+    [course_id] => 18
+    [title] => 4444444444444444
+    [description] => ap
+    [due_date] => 2025-12-12
+)
+
+GET: Array
+(
+    [action] => update
+)
+
+SESSION: 
+Nuevo CSRF generado: e36a8a3baeac09d6ea1736fd75144c6820cc291b97cec54a1a738a5637456e84
+CSRF Validación desactivada temporalmente. Session=e36a8a3baeac09d6ea1736fd75144c6820cc291b97cec54a1a738a5637456e84, Post=704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+Iniciado: 2025-12-11 05:30:54
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [course_id] => 10
+    [title] => ssss
+    [description] => ss
+    [due_date] => 2025-12-19
+)
+
+GET: Array
+(
+    [action] => create
+)
+
+SESSION: 
+Nuevo CSRF generado: 2b9b5b4bb8e88da66cda26f82c48028a0b7e9c3b2684be9a79b2386d66cdb697
+CSRF Validación desactivada temporalmente. Session=2b9b5b4bb8e88da66cda26f82c48028a0b7e9c3b2684be9a79b2386d66cdb697, Post=704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+Iniciado: 2025-12-11 05:31:00
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [id] => 9
+)
+
+GET: Array
+(
+    [action] => delete
+)
+
+SESSION: 
+Nuevo CSRF generado: 04f7001c229c85449e272437ec8d9be51ecfef269ac47c5b0e863210ba244fd1
+CSRF Validación desactivada temporalmente. Session=04f7001c229c85449e272437ec8d9be51ecfef269ac47c5b0e863210ba244fd1, Post=704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+Delete Action - task_id recibido: 9
+Tarea eliminada exitosamente: ID 9
+Material Controller - Iniciado: 2025-12-11 05:56:42
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [id] => 2
+    [course_id] => 11
+    [title] => sss
+    [description] => 0
+    [content_type] => file
+    [content_url] => 
+)
+
+FILES: Array
+(
+)
+
+Material Controller - Iniciado: 2025-12-11 05:56:56
+POST: Array
+(
+    [csrf_token] => 704935f7551c5bef3bae713ed6380b743d4e6a3aa0dc3a53f7a5cc4ddbfca6be
+    [id] => 2
+    [course_id] => 11
+    [title] => 555
+    [description] => 0
+    [content_type] => file
+    [content_url] => 
+)
+
+FILES: Array
+(
+)
+
+Material Controller - Iniciado: 2025-12-11 05:58:09
+POST: Array
+(
+)
+
+FILES: Array
+(
+)
+
+Material Controller - Iniciado: 2025-12-11 05:58:45
+POST: Array
+(
+)
+
+FILES: Array
+(
+)
+
+Material Controller - Iniciado: 2025-12-12 19:51:17
+POST: Array
+(
+)
+
+FILES: Array
+(
+)
+
+Iniciado: 2025-12-12 19:56:05
+POST: Array
+(
+    [csrf_token] => b84c0609b7a96ac95b1b13b20adfd76e1071bf443e0a53888f5abe5d4108e347
+    [submission_id] => 6
+    [task_id] => 8
+    [student_id] => 1
+    [grade] => 99
+    [feedback] => ññ
+)
+
+GET: Array
+(
+    [action] => grade
+)
+
+SESSION: 
+Nuevo CSRF generado: c0bb545c9413f292fc87c3df81f7530df16f3eba45ed001f9bf898ca5ca1bb71
+CSRF Validación desactivada temporalmente. Session=c0bb545c9413f292fc87c3df81f7530df16f3eba45ed001f9bf898ca5ca1bb71, Post=b84c0609b7a96ac95b1b13b20adfd76e1071bf443e0a53888f5abe5d4108e347
+Grade Action - submission_id: 6, grade: 99, feedback: ññ
+Iniciado: 2025-12-12 19:57:27
+POST: Array
+(
+    [csrf_token] => b84c0609b7a96ac95b1b13b20adfd76e1071bf443e0a53888f5abe5d4108e347
+    [course_id] => 18
+    [title] => segunda tarea
+    [description] => jajsjkdjjw
+    [due_date] => 2025-12-15
+)
+
+GET: Array
+(
+    [action] => create
+)
+
+SESSION: 
+Nuevo CSRF generado: 6b50f4af0fbaa38e7f1d58e07ad470713315f53f414a4789fd14aac3bbfb7d75
+CSRF Validación desactivada temporalmente. Session=6b50f4af0fbaa38e7f1d58e07ad470713315f53f414a4789fd14aac3bbfb7d75, Post=b84c0609b7a96ac95b1b13b20adfd76e1071bf443e0a53888f5abe5d4108e347
+Material Controller - Iniciado: 2025-12-12 20:12:14
+POST: Array
+(
+    [csrf_token] => b84c0609b7a96ac95b1b13b20adfd76e1071bf443e0a53888f5abe5d4108e347
+    [course_id] => 18
+    [content_type] => file
+    [title] => Ejercicio en clase 
+    [description] => jjjjdodjojowdkw
+    [content_url] => 
+    [content_text] => 
+)
+
+FILES: Array
+(
+    [file] => Array
+        (
+            [name] => ecuaciones.docx
+            [full_path] => ecuaciones.docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\php4098.tmp
+            [error] => 0
+            [size] => 40985
+        )
+
+)
+
+Iniciado: 2026-01-17 23:55:42
+POST: Array
+(
+    [csrf_token] => 8758e7e592cf40ff2eb3d2dcf01ca4c97ea0f60ef621a4df1632c1f286ff77b6
+    [id] => 3
+    [course_id] => 3
+    [title] => poo
+    [description] => wddwd777777
+    [due_date] => 2025-07-31
+)
+
+GET: Array
+(
+    [action] => update
+)
+
+SESSION: 
+Nuevo CSRF generado: 76c73a0a2109025cdd2076ae0e796294eaf25a16663bcaa38f5f38d5b3545a5a
+CSRF Validación desactivada temporalmente. Session=76c73a0a2109025cdd2076ae0e796294eaf25a16663bcaa38f5f38d5b3545a5a, Post=8758e7e592cf40ff2eb3d2dcf01ca4c97ea0f60ef621a4df1632c1f286ff77b6
+Iniciado: 2026-01-17 23:56:21
+POST: Array
+(
+    [csrf_token] => 8758e7e592cf40ff2eb3d2dcf01ca4c97ea0f60ef621a4df1632c1f286ff77b6
+    [course_id] => 19
+    [title] => Cual fue la primera computadora de la Historia 
+    [description] => Historia de los pcs
+    [due_date] => 2026-01-18
+)
+
+GET: Array
+(
+    [action] => create
+)
+
+SESSION: 
+Nuevo CSRF generado: 10cb1e313969cfcdcc8a9b23108f12bd476938adfa29d21cc8decc4ae4a7f355
+CSRF Validación desactivada temporalmente. Session=10cb1e313969cfcdcc8a9b23108f12bd476938adfa29d21cc8decc4ae4a7f355, Post=8758e7e592cf40ff2eb3d2dcf01ca4c97ea0f60ef621a4df1632c1f286ff77b6
+Iniciado: 2026-02-24 04:07:47
+POST: Array
+(
+    [csrf_token] => eb2f95cf3fb2764d19a465d2caaf3aa166673583c440c4565d9de3e927c80e59
+    [course_id] => 20
+    [title] => Que es la programacion
+    [description] => Da un breve resumen sobre que es la programacion
+    [due_date] => 2026-02-28
+)
+
+GET: Array
+(
+    [action] => create
+)
+
+SESSION: 
+Nuevo CSRF generado: b64dd36449ea428086a597a083a0bc0fbbceb4b5acc09d6049f926275b5d08f5
+CSRF Validación desactivada temporalmente. Session=b64dd36449ea428086a597a083a0bc0fbbceb4b5acc09d6049f926275b5d08f5, Post=eb2f95cf3fb2764d19a465d2caaf3aa166673583c440c4565d9de3e927c80e59
+Material Controller - Iniciado: 2026-02-24 04:09:24
+POST: Array
+(
+    [csrf_token] => eb2f95cf3fb2764d19a465d2caaf3aa166673583c440c4565d9de3e927c80e59
+    [course_id] => 20
+    [content_type] => text
+    [title] => Que es la programacion
+    [description] => Material de estudio
+    [content_url] => 
+    [content_text] => La programación es el proceso de crear instrucciones que una computadora puede entender y ejecutar. A través de lenguajes de programación, los desarrolladores diseñan soluciones para resolver problemas, automatizar tareas y construir aplicaciones o sistemas. En esencia, programar es transformar ideas en código que da vida a herramientas digitales.
+)
+
+FILES: Array
+(
+    [file] => Array
+        (
+            [name] => 
+            [full_path] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+

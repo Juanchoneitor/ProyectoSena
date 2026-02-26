@@ -1,0 +1,57 @@
+/* Fondo general */
+body {
+    background-color: #f9fafb; /* Gris claro más elegante */
+    color: #1f2937; /* Texto en gris oscuro (más legible que negro puro) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #111827 !important; /* Gris oscuro elegante */
+    letter-spacing: 0.5px;
+}
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb; /* Línea sutil */
+}
+.navbar-nav .nav-link {
+    color: #374151 !important; /* Gris oscuro */
+    transition: color 0.2s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: #2563eb !important; /* Azul minimalista al hover */
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 0.75rem; /* Bordes redondeados suaves */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* Sombra sutil */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #2563eb; /* Azul minimalista */
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* Footer (en caso de querer integrarlo con custom.css) */
+footer {
+    font-size: 0.9rem;
+}

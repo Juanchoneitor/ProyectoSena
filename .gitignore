@@ -1,0 +1,84 @@
+# =========================
+# ARCHIVOS DEL SISTEMA
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# ARCHIVOS DE CONFIGURACIÓN LOCAL
+# =========================
+.env
+.env.local
+.env.*.local
+config.php
+config_local.php
+
+# =========================
+# ARCHIVOS DE SERVIDOR
+# =========================
+.htaccess
+.htpasswd
+
+# =========================
+# LOGS
+# =========================
+*.log
+logs/
+error_log
+
+# =========================
+# CACHE Y TEMPORALES
+# =========================
+cache/
+tmp/
+temp/
+*.cache
+
+# =========================
+# ARCHIVOS DE SUBIDA
+# =========================
+uploads/
+public/uploads/
+
+# =========================
+# DEPENDENCIAS (si usas Composer)
+# =========================
+vendor/
+
+# =========================
+# ARCHIVOS DE BASE DE DATOS
+# =========================
+*.sql
+*.sqlite
+*.db
+
+# =========================
+# IDEs Y EDITORES
+# =========================
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# ARCHIVOS DE PRUEBA
+# =========================
+*.bak
+*.swp
+*.old
+
+# =========================
+# NODE (si usas frontend)
+# =========================
+node_modules/
+dist/
+build/
+
+# =========================
+# ARCHIVOS DEL SISTEMA OPERATIVO
+# =========================
+*.exe
+*.dll
+*.zip
+*.rar
