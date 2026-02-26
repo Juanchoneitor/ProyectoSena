@@ -24,7 +24,7 @@ $error = null;
 $success = null;
 
 try {
-    // 📄 Obtener información de la tarea
+    // Obtener información de la tarea
     $stmt = $pdo->prepare("SELECT t.*, c.title AS course_title
                             FROM tasks t
                             JOIN courses c ON t.course_id = c.id

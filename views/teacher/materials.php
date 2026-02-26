@@ -10,8 +10,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'teacher') {
     exit;
 }
 
-$success = filter_input(INPUT_GET, 'success', FILTER_SANITIZE_STRING);
-$error = filter_input(INPUT_GET, 'error', FILTER_SANITIZE_STRING);
+$success = filter_input(INPUT_GET, 'success');
+$error = filter_input(INPUT_GET, 'error');
 
 // Asegurar que el token CSRF esté siempre presente
 if (!isset($_SESSION['csrf_token'])) {

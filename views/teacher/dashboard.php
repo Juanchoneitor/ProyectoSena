@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'teacher') {
 
 $teacher_id = $_SESSION['user_id'];
 
-// Obtener estadísticas - CORREGIDO con consultas preparadas
+// Obtener estadísticas 
 try {
     // Contar cursos del docente
     $stmt = $pdo->prepare("SELECT COUNT(*) as total_courses FROM courses WHERE teacher_id = ?");

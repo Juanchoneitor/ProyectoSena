@@ -16,7 +16,7 @@ $course_id = isset($_GET['course_id']) ? intval($_GET['course_id']) : 0;
 
 $taskModel = new TaskModel($pdo);
 
-// 📌 Si se pasa un course_id → mostrar tareas de ese curso (solo pendientes)
+//  Si se pasa un course_id → mostrar tareas de ese curso (solo pendientes)
 if ($course_id > 0) {
     // Consulta modificada para excluir tareas ya entregadas
     $sql = "SELECT t.id, t.title, t.description, t.due_date, c.title AS course_title, t.course_id
@@ -36,7 +36,7 @@ if ($course_id > 0) {
 
     $pageTitle = "Mis Tareas - " . htmlspecialchars($course['title']);
 } else {
-    // 📌 Si no hay course_id → mostrar todas las tareas pendientes del estudiante
+    // Si no hay course_id → mostrar todas las tareas pendientes del estudiante
     $sql = "SELECT t.id, t.title, t.description, t.due_date, c.title AS course_title, t.course_id
             FROM tasks t
             INNER JOIN courses c ON t.course_id = c.id

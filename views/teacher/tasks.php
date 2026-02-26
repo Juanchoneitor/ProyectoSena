@@ -48,7 +48,7 @@ try {
     $courses = [];
 }
 
-// ✅ NUEVO: si viene course_id, validar que ese curso pertenezca al teacher (seguridad)
+//si viene course_id, validar que ese curso pertenezca al teacher 
 if ($courseId) {
     try {
         $stmtCheck = $pdo->prepare("SELECT id FROM courses WHERE id = ? AND teacher_id = ?");
